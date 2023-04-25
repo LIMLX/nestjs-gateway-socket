@@ -3,10 +3,11 @@ import { AppController } from './app.controller';
 import { AppGateway, AppService } from './app.service';
 import { ClientProxyFactory, Transport } from '@nestjs/microservices';
 
+
 @Module({
-  imports: [],
+  imports: [AppGateway],
   controllers: [AppController],
-  providers: [AppService, AppGateway,
+  providers: [AppService,
     {
       provide: 'users',
       useFactory: () => {

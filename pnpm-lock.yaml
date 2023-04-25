@@ -7,6 +7,7 @@ specifiers:
   '@nestjs/microservices': ^9.3.12
   '@nestjs/platform-express': ^9.0.0
   '@nestjs/platform-socket.io': ^9.3.12
+  '@nestjs/platform-ws': ^9.4.0
   '@nestjs/schematics': ^9.0.0
   '@nestjs/testing': ^9.0.0
   '@nestjs/websockets': ^9.3.12
@@ -39,6 +40,7 @@ dependencies:
   '@nestjs/microservices': registry.npmmirror.com/@nestjs/microservices/9.3.12_aywoatlirnfmlrlqwuqocx3olq
   '@nestjs/platform-express': registry.npmmirror.com/@nestjs/platform-express/9.3.12_ge4qplnzbmfyi5znl534zhtkn4
   '@nestjs/platform-socket.io': registry.npmmirror.com/@nestjs/platform-socket.io/9.3.12_wrisvyl4dee7g4zqm7fsddtudy
+  '@nestjs/platform-ws': registry.npmmirror.com/@nestjs/platform-ws/9.4.0_wrisvyl4dee7g4zqm7fsddtudy
   '@nestjs/websockets': registry.npmmirror.com/@nestjs/websockets/9.3.12_co26mupaw3whrp4scxkscvfoeq
   reflect-metadata: registry.npmmirror.com/reflect-metadata/0.1.13
   rxjs: registry.npmmirror.com/rxjs/7.8.0
@@ -1197,6 +1199,26 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
+
+  registry.npmmirror.com/@nestjs/platform-ws/9.4.0_wrisvyl4dee7g4zqm7fsddtudy:
+    resolution: {integrity: sha512-rNaShI/YYwYAcO8hj1oy2oUlFCC7O3gIvaCIV1fpRGzFu2xBuxzBCeaC5CMmOWea5NoJiNTV3YbHRxbTRt2FOw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@nestjs/platform-ws/-/platform-ws-9.4.0.tgz}
+    id: registry.npmmirror.com/@nestjs/platform-ws/9.4.0
+    name: '@nestjs/platform-ws'
+    version: 9.4.0
+    peerDependencies:
+      '@nestjs/common': ^9.0.0
+      '@nestjs/websockets': ^9.0.0
+      rxjs: ^7.1.0
+    dependencies:
+      '@nestjs/common': registry.npmmirror.com/@nestjs/common/9.3.12_mnr6j2del53muneqly5h4y27ai
+      '@nestjs/websockets': registry.npmmirror.com/@nestjs/websockets/9.3.12_co26mupaw3whrp4scxkscvfoeq
+      rxjs: registry.npmmirror.com/rxjs/7.8.0
+      tslib: registry.npmmirror.com/tslib/2.5.0
+      ws: registry.npmmirror.com/ws/8.13.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    dev: false
 
   registry.npmmirror.com/@nestjs/schematics/9.1.0_n7i3t5jmyrdrkypb5pvfihcmg4:
     resolution: {integrity: sha512-/7CyMTnPJSK9/xD9CkCqwuHPOlHVlLC2RDnbdCJ7mIO07SdbBbY14msTqtYW9VRQtsjZPLh1GTChf7ryJUImwA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@nestjs/schematics/-/schematics-9.1.0.tgz}
@@ -6507,6 +6529,21 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+
+  registry.npmmirror.com/ws/8.13.0:
+    resolution: {integrity: sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ws/-/ws-8.13.0.tgz}
+    name: ws
+    version: 8.13.0
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    dev: false
 
   registry.npmmirror.com/xmlhttprequest-ssl/2.0.0:
     resolution: {integrity: sha512-QKxVRxiRACQcVuQEYFsI1hhkrMlrXHPegbbd1yn9UHOmRxY+si12nQYzri3vbzt8VdTTRviqcKxcyllFas5z2A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-2.0.0.tgz}

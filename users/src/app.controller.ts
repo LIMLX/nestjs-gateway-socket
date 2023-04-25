@@ -8,7 +8,7 @@ export class AppController {
 
   @Get()
   @MessagePattern({ cmd: "user" })
-  getHello(): string {
-    return this.appService.getHello()
+  async getHello() {
+    return await this.appService.getHello()
   }
 }
